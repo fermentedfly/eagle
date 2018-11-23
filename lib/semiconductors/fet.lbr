@@ -57,8 +57,15 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="Board" color="7" fill="1" visible="no" active="no"/>
+<layer number="80" name="tRubout_CU_Freistellung" color="7" fill="1" visible="no" active="no"/>
+<layer number="81" name="bRubout_CU_Freistellung" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -70,6 +77,76 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
+<layer number="100" name="Oberseite" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="101" name="Unterseite" color="10" fill="2" visible="yes" active="yes"/>
+<layer number="102" name="gbr102" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="103" name="gbr103" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="BGA-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="BD-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="DXF_Outlines" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="120" name="testpad" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="tTestdril" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="bTestdril" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="147" name="Heatsink-Milling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="bDocu2" color="7" fill="1" visible="no" active="yes"/>
+<layer number="153" name="tDocu3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="154" name="bDocu3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="155" name="tOutlines" color="7" fill="1" visible="no" active="yes"/>
+<layer number="156" name="bOutlines" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
+<layer number="201" name="201bmp" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="8" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="218" name="218bmp" color="17" fill="1" visible="yes" active="yes"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="247" name="wrappinf" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="248" name="PLCDoku" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="MillDoku" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="253" name="Trafo_Layer2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="trafo_layer1" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <packages>
@@ -93,6 +170,40 @@ Source: U6 OnSemi Inductive Load Driver MDC3105-D.PDF</description>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 <rectangle x1="-0.5001" y1="-0.3" x2="0.5001" y2="0.3" layer="35"/>
+</package>
+<package name="POWERPAK_SC70-6L">
+<smd name="1" x="-0.65" y="-0.945" dx="0.3" dy="0.39" layer="1" stop="no" cream="no"/>
+<smd name="2" x="0" y="-0.945" dx="0.3" dy="0.39" layer="1" stop="no" cream="no"/>
+<smd name="TH_D" x="-0.325" y="0" dx="0.95" dy="1.5" layer="1" stop="no" cream="no"/>
+<text x="-1.13" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.13" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="3" x="0.65" y="-0.945" dx="0.3" dy="0.39" layer="1" stop="no" cream="no"/>
+<smd name="4" x="0.65" y="0.945" dx="0.3" dy="0.39" layer="1" stop="no" cream="no"/>
+<smd name="5" x="0" y="0.945" dx="0.3" dy="0.39" layer="1" stop="no" cream="no"/>
+<smd name="6" x="-0.65" y="0.945" dx="0.3" dy="0.39" layer="1" stop="no" cream="no"/>
+<smd name="TH_S" x="0.65" y="0.04" dx="0.235" dy="0.87" layer="1" stop="no" cream="no"/>
+<rectangle x1="-0.825" y1="-0.775" x2="0.175" y2="0.775" layer="29"/>
+<rectangle x1="0.507" y1="-0.42" x2="0.793" y2="0.5" layer="29"/>
+<rectangle x1="-0.825" y1="0.775" x2="-0.475" y2="1.165" layer="29"/>
+<rectangle x1="0.475" y1="0.725" x2="0.825" y2="1.165" layer="29"/>
+<rectangle x1="-0.825" y1="-1.165" x2="-0.475" y2="-0.775" layer="29"/>
+<rectangle x1="0.475" y1="-1.165" x2="0.825" y2="-0.725" layer="29"/>
+<rectangle x1="-0.175" y1="0.775" x2="0.175" y2="1.165" layer="29"/>
+<rectangle x1="-0.175" y1="-1.165" x2="0.175" y2="-0.775" layer="29"/>
+<rectangle x1="-0.775" y1="-0.725" x2="0.125" y2="0.725" layer="31"/>
+<rectangle x1="-0.775" y1="0.725" x2="-0.525" y2="1.115" layer="31"/>
+<rectangle x1="-0.125" y1="0.725" x2="0.125" y2="1.115" layer="31"/>
+<rectangle x1="0.525" y1="0.775" x2="0.775" y2="1.115" layer="31"/>
+<rectangle x1="0.557" y1="-0.37" x2="0.743" y2="0.45" layer="31"/>
+<rectangle x1="-0.775" y1="-1.115" x2="-0.525" y2="-0.725" layer="31"/>
+<rectangle x1="-0.125" y1="-1.115" x2="0.125" y2="-0.725" layer="31"/>
+<wire x1="-1.025" y1="1.025" x2="1.025" y2="1.025" width="0.1" layer="21"/>
+<wire x1="1.025" y1="1.025" x2="1.025" y2="-1.025" width="0.1" layer="21"/>
+<wire x1="1.025" y1="-1.025" x2="-1.025" y2="-1.025" width="0.1" layer="21"/>
+<wire x1="-1.025" y1="-1.025" x2="-1.025" y2="1.025" width="0.1" layer="21"/>
+<rectangle x1="-1" y1="-1" x2="-0.5" y2="-0.3" layer="21"/>
+<rectangle x1="0.525" y1="-1.115" x2="0.775" y2="-0.775" layer="31"/>
+<rectangle x1="-1.1" y1="-1.1" x2="1.1" y2="1.1" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -133,12 +244,76 @@ Source: U6 OnSemi Inductive Load Driver MDC3105-D.PDF</description>
 <vertex x="1.524" y="-0.762"/>
 </polygon>
 </symbol>
+<symbol name="P-MOS">
+<wire x1="-1.651" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-2.159" x2="0" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="-0.508" x2="1.397" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="2.159" x2="0" y2="2.159" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.159" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="1.397" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="2.54" x2="1.397" y2="0.381" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.159" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<rectangle x1="-2.032" y1="1.397" x2="-1.524" y2="2.921" layer="94"/>
+<rectangle x1="-2.032" y1="-0.762" x2="-1.524" y2="0.762" layer="94"/>
+<rectangle x1="-2.032" y1="-2.921" x2="-1.524" y2="-1.397" layer="94"/>
+<rectangle x1="0.762" y1="-0.635" x2="2.032" y2="-0.508" layer="94"/>
+<pin name="D" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+<polygon width="0.1016" layer="94">
+<vertex x="-0.127" y="0"/>
+<vertex x="-1.143" y="-0.635"/>
+<vertex x="-1.143" y="0.635"/>
+</polygon>
+<polygon width="0.1016" layer="94">
+<vertex x="1.397" y="-0.508"/>
+<vertex x="0.762" y="0.508"/>
+<vertex x="2.032" y="0.508"/>
+</polygon>
+<text x="2.54" y="0" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="N-MOS">
+<wire x1="-0.508" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-2.159" x2="0" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="-0.254" x2="1.397" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="2.159" x2="0" y2="2.159" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.159" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="1.397" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="2.54" x2="1.397" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.159" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<text x="2.54" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<rectangle x1="-2.032" y1="1.397" x2="-1.524" y2="2.921" layer="94"/>
+<rectangle x1="-2.032" y1="-0.762" x2="-1.524" y2="0.762" layer="94"/>
+<rectangle x1="-2.032" y1="-2.921" x2="-1.524" y2="-1.397" layer="94"/>
+<rectangle x1="0.762" y1="0.762" x2="2.032" y2="0.889" layer="94"/>
+<pin name="D" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+<polygon width="0.1016" layer="94">
+<vertex x="-1.524" y="0"/>
+<vertex x="-0.508" y="0.635"/>
+<vertex x="-0.508" y="-0.635"/>
+</polygon>
+<polygon width="0.1016" layer="94">
+<vertex x="1.397" y="0.762"/>
+<vertex x="2.032" y="-0.254"/>
+<vertex x="0.762" y="-0.254"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="NTR4501N" prefix="T">
+<deviceset name="N-CH_NTR4501N" prefix="T">
 <description>20 V, 3.2 A, Single N−Channel, SOT−23</description>
 <gates>
-<gate name="G$1" symbol="P-MOSFET" x="-2.54" y="0"/>
+<gate name="G$1" symbol="N-MOS" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT23">
@@ -149,6 +324,30 @@ Source: U6 OnSemi Inductive Load Driver MDC3105-D.PDF</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P-CH_SIA483DJ" prefix="T">
+<description>&lt;b&gt;P-Channel 12 V (D-S) MOSFET&lt;/b&gt;
+&lt;br&gt;
+&lt;br&gt;
+low Rds_on</description>
+<gates>
+<gate name="G$1" symbol="P-MOS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POWERPAK_SC70-6L">
+<connects>
+<connect gate="G$1" pin="D" pad="1 2 5 6 TH_D"/>
+<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="S" pad="4 TH_S"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DISTRIBUTOR" value="Digikey" constant="no"/>
+<attribute name="OC_DIGIKEY" value="SIA483DJ-T1-GE3CT-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
