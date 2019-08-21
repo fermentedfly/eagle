@@ -1,0 +1,12 @@
+string cmd;
+
+schematic(S)
+{
+	if(argc != 4) {
+		dlgMessageBox("Usage Distributor, Order Code, PartID","+OK");
+		exit(EXIT_SUCCESS);
+	}
+	
+	sprintf(cmd, "attr %s 'DISTRIBUTOR' '%s'; attr %s 'ORDER_CODE' '%s';", argv[3], argv[1], argv[3], argv[2]);
+	exit(cmd);
+}
