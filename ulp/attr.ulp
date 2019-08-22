@@ -12,7 +12,7 @@ schematic(S)
       SH.parts(P) {
         int i = 3;
         while(i < argc) {
-          if(strstr(P.name, strupr(argv[i])) >= 0) {
+          if(strstr(P.name, strupr(argv[i])) >= 0 && strlen(P.name) == strlen(argv[i])) {
 	   sprintf(s, "edit .s%d;", SH.number);
             cmd += s;
             sprintf(s, "attr %s 'DISTRIBUTOR' '%s'; attr %s 'ORDER_CODE' '%s';", argv[i], argv[1], argv[i], argv[2]);
