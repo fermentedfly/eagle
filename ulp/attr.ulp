@@ -1,12 +1,28 @@
-string cmd;
+string cmd = "CHANGE DISPLAY OFF;";
+string s;
 
 schematic(S)
 {
-	if(argc != 4) {
-		dlgMessageBox("Usage Distributor, Order Code, PartID","+OK");
-		exit(EXIT_SUCCESS);
-	}
-	
-	sprintf(cmd, "attr %s 'DISTRIBUTOR' '%s'; attr %s 'ORDER_CODE' '%s';", argv[3], argv[1], argv[3], argv[2]);
-	exit(cmd);
+  if(argc < 4) {
+    dlgMessageBox("Usage Distributor, Order Code, PartIDs...","+OK");
+    exit(EXIT_SUCCESS);
+  }
+  schematic(S) {
+    S.sheets(SH) {
+      SH.parts(P) {
+        int i = 3;
+        while(i < argc) {
+          if(strstr(P.name, strupr(argv[i])) >= 0) {
+	   sprintf(s, "edit .s%d;", SH.number);
+            cmd += s;
+            sprintf(s, "attr %s 'DISTRIBUTOR' '%s'; attr %s 'ORDER_CODE' '%s';", argv[i], argv[1], argv[i], argv[2]);
+	   cmd += s;
+          }
+          ++i;
+        }  
+      }
+    } 
+  }      
 }
+
+exit(cmd);
